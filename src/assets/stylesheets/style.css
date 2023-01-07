@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Quicksand";
+    text-align: center;
+    user-select: none;
+    /* outline: 1px solid pink; */
+}
+
+body {
+    margin: 0;
+}
+
+.dark {
+    background: linear-gradient(135deg, rgb(1, 12, 32), rgb(74, 7, 110));
+    color: rgba(255, 255, 255, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.light {
+    background: linear-gradient(135deg, #98b6f7, #9cf1df);
+    color: rgba(0, 0, 0, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+button img.display-mode {
+    width: 30px;
+}
+
+button {
+    color: white;
+    background-color: #212529;
+    border: 2px solid #212529;
+    cursor: pointer;
+}
+
+a.navbar-brand {
+    font-size: 2rem;
+}
+
+/* START */
+.bouncing-text {
+    position: relative;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+.j,
+.v,
+.l {
+    position: relative;
+    color: #4cc9f0;
+    text-shadow: 0 3px #4361ee, 0 5px #4361ee, 0 7px #4361ee;
+}
+
+.j {
+    animation: bounce 1s ease infinite;
+    -webkit-animation: bounce 1s ease infinite;
+}
+
+.v {
+    animation: bounce 1s ease infinite .1s;
+    -webkit-animation: bounce 1s ease infinite .1s;
+}
+
+.l {
+    animation: bounce 1s ease infinite .2s;
+    -webkit-animation: bounce 1s ease infinite .2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-10px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    58% {
+        transform: scale(1, 1) translateY(-3px);
+    }
+
+    65% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-10px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    58% {
+        transform: scale(1, 1) translateY(-3px);
+    }
+
+    65% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+.bouncing-text:before {
+    left: 0;
+    animation: scale 1s linear infinite;
+    -webkit-animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.4);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes scale {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.4);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bouncing-text:after {
+    left: 57px;
+    animation: scale 1s linear infinite .1s;
+    -webkit-animation: scale 1s linear infinite .1s;
+}
+
+.shadow:before {
+    left: 116px;
+    animation: scale 1s linear infinite .2s;
+    -webkit-animation: scale 1s linear infinite .2s;
+}
+
+.shadow:after {
+    left: 175px;
+    animation: scale 1s linear infinite .3s;
+    -webkit-animation: scale 1s linear infinite .3s;
+}
+
+.shadow-two:before {
+    left: 232px;
+    animation: scale 1s linear infinite .4s;
+    -webkit-animation: scale 1s linear infinite .4s;
+}
+
+.shadow-two:after {
+    left: 285px;
+    animation: scale 1s linear infinite .5s;
+    -webkit-animation: scale 1s linear infinite .5s;
+}
+
+/* END */
+
+a.nav-link {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+a.nav-link:hover {
+    color: chocolate;
+}
+
+img.display-mode {
+    width: 50px;
+}
+
+.home.row {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0 50px;
+    font-size: 3.5vw;
+}
+
+.content p {
+    font-size: 3.2vmax;
+    font-weight: bold;
+}
+
+.about.row {
+    margin-top: 4rem;
+    justify-content: space-between;
+    margin-right: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 30px 40px;
+    font-size: 1.5rem;
+}
+
+.summary ul li:hover {
+    transform: scale(1.05, 1.05);
+}
+
+li:hover>span {
+    color: blue;
+    font-weight: bold;
+    transform: scale(1.25, 1.25);
+}
+
+h2 span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.projects.row {
+    margin: 4rem 0 2rem 0;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+}
+
+div#features h4 {
+    text-align: left;
+}
+
+.play-icon, .github-icon {
+    width: 50px;
+}
+
+ul li {
+    text-align: justify;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.feature {
+    font-size: 1.75rem;
+}
+
+.feature span {
+    text-decoration: underline;
+}
+
+li.feature-list {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* LIGHT */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+    font-weight: bold;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.font-dark {
+    color: black;
+}
+
+.font-light {
+    color: white;
+}
+
+/* DARK */
+.flip-card-dark {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner-dark {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-dark:hover .flip-card-inner-dark {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front-dark,
+.flip-card-back-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front-dark {
+    color: black;
+    font-weight: bold;
+}
+
+.flip-card-back-dark {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.experience.row {
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 30px 40px;
+    font-size: 1.5rem;
+}
+
+.exp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.exp img {
+    width: 75px;
+    height: 75px;
+}
+
+.exp-info h2,
+.exp-info h3,
+.exp-info h4,
+.exp-info p {
+    text-align: left;
+}
+
+.contact.row {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-right: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 40px;
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    cursor: pointer;
+}
+
+.contact-info:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.badge {
+    cursor: pointer;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-size: 1.25rem;
+}
+
+#features {
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black;
+    margin: 20px 0;
+}

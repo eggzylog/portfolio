@@ -1,0 +1,79 @@
+{
+  "contents": [
+    {
+      "id": 1,
+      "title": "YouTube Clone",
+      "imgFileName": "youtube-clone.png",
+      "appLink": "https://jvl-youtube-clone.vercel.app/",
+      "repoLink": "https://github.com/eggzylog/youtube-clone-react",
+      "badges": [
+        { "id": 1, "used": "Axios" },
+        { "id": 2, "used": "Bootstrap" },
+        { "id": 3, "used": "useEffect" },
+        { "id": 4, "used": "useState" }
+      ],
+      "features": [
+        { "id": 1, "ftr": "Can post, like, or dislike a comment" },
+        { "id": 2, "ftr": "Dark Mode and Light Mode Ready" },
+        { "id": 3, "ftr": "Fully functional search button" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "GameOfNerds Clone",
+      "imgFileName": "gameofnerds.jpg",
+      "appLink": "https://game-of-nerds.vercel.app/",
+      "repoLink": "https://github.com/eggzylog/game-of-nerds",
+      "badges": [
+        { "id": 1, "used": "Bootstrap" },
+        { "id": 2, "used": "createContext" },
+        { "id": 3, "used": "useContext" },
+        { "id": 4, "used": "useEffect" },
+        { "id": 5, "used": "useState" },
+        { "id": 6, "used": "use-sound" }
+      ],
+      "features": [
+        {
+          "id": 1,
+          "ftr": "Random multiple choice quiz app with customizable username"
+        },
+        { "id": 2, "ftr": "Working game timer and game sound" },
+        { "id": 3, "ftr": "Local leaderboard" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Windows Calculator Clone",
+      "imgFileName": "windows-calculator-clone.png",
+      "appLink": "https://jvl-calculator.vercel.app/",
+      "repoLink": "https://github.com/eggzylog/react-calculator",
+      "badges": [
+        { "id": 1, "used": "Bootstrap" },
+        { "id": 2, "used": "useReducer" }
+      ],
+      "features": [
+        { "id": 1, "ftr": "Reciprocal and percentages and negatives" },
+        { "id": 2, "ftr": "Basic and modular arithmetic" },
+        { "id": 3, "ftr": "Square and square root" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Portfolio",
+      "imgFileName": "portfolio.png",
+      "appLink": "https://jvl-portfolio.vercel.app/",
+      "repoLink": "https://github.com/eggzylog/portfolio",
+      "badges": [
+        { "id": 1, "used": "Bootstrap" },
+        { "id": 2, "used": "useCallback" },
+        { "id": 3, "used": "useEffect" },
+        { "id": 4, "used": "useState" },
+        { "id": 5, "used": "JSON" },
+        { "id": 6, "used": "React Router DOM" }
+      ],
+      "features": [
+        { "id": 1, "ftr": "Can choose to view in dark mode or light mode"}
+      ]
+    }
+  ]
+}

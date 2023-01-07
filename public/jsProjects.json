@@ -1,0 +1,37 @@
+{
+  "contents": [
+    {
+      "id": 1,
+      "title": "Piano (HTML, CSS, JS)",
+      "imgFileName": "piano-icon.png",
+      "appLink": "https://www.youtube.com/embed/TOzgynsDdyM",
+      "repoLink": "https://github.com/eggzylog/js-piano",
+      "badges": [
+        { "id": 1, "used": "HTML5" },
+        { "id": 2, "used": "CSS" },
+        { "id": 3, "used": "JavaScript" }
+      ],
+      "features": [
+        { "id": 1, "ftr": "Sample chords are listed above to demonstrate the working piano" },
+        { "id": 2, "ftr": "Simple virtual piano (88 keys) built in OOP" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bouncing Circles (JS - OOP)",
+      "imgFileName": "bouncing-icon.png",
+      "appLink": "https://www.youtube.com/embed/HU9xWuPELXU",
+      "repoLink": "https://github.com/eggzylog/js-bounce",
+      "badges": [
+        { "id": 1, "used": "HTML5" },
+        { "id": 2, "used": "CSS" },
+        { "id": 3, "used": "JavaScript" },
+        { "id": 4, "used": "OOP" }
+      ],
+      "features": [
+        { "id": 1, "ftr": "Built in object oriented programming (OOP)" },
+        { "id": 2, "ftr": "Simple collision added" }
+      ]
+    }
+  ]
+}
