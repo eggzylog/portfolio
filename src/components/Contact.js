@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 
 function Contact() {
@@ -10,8 +11,10 @@ function Contact() {
             </div>
 
             <div className="contact-info col-sm-3">
-                <img src={require('../assets/images/phone-icon.png')} alt="Phone icon" style={{ width: '75px', height: '75px' }} className='phone-icon' title='Cellphone Number' />
-                <p>0920 156 3777</p>
+                <a style={{ textDecoration: 'none', color: 'rgba(0, 0, 0, 0.7)' }} href="tel:+639201563777">
+                    <img src={require('../assets/images/phone-icon.png')} alt="Phone icon" style={{ width: '75px', height: '75px' }} className='phone-icon' title='Cellphone Number' />
+                    <p>0920 156 3777</p>
+                </a>
             </div>
 
             <div className="contact-info email col-sm-3">
